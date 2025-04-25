@@ -14,7 +14,7 @@ FaceGate ist eine Webanwendung, in der fortschrittliche Gesichtserkennungstechno
 - [Python-Installation](#python-installation)
 - [Installation von Anaconda](#installation-von-anaconda)
 - [Verwendung](#verwendung)
-- [Lizenz](#lizenz)
+
 
 ## Einführung
 
@@ -118,10 +118,4 @@ Stellen Sie sicher, dass Python auf Ihrem Computer installiert ist. Wenn nicht, 
 
 Die Plattform FaceGate ermöglicht es den Nutzern, ihre beruflichen Informationen effizient zu verwalten. Die Interaktion mit der Anwendung variiert je nach Benutzerrolle: Mitarbeiter oder Administrator. Administratoren haben die Möglichkeit, Mitarbeiter hinzuzufügen, zu löschen oder deren Daten zu ändern sowie Abteilungen zu ergänzen, zu entfernen oder zu aktualisieren. Mitarbeiter hingegen können ihre Arbeitszeiten einsehen, Urlaub beantragen, Krankheitstage melden und entsprechende Bescheinigungen hochladen. Zusätzlich können sie Bilder für die Gesichtserkennung in Echtzeit aufnehmen für die Gesichtserkennung Prozess.
 
-## Lizenz
 
-Copyright (c) <2024> HTW Berlin Fachübergreifendesprojekt Gruppe 7 (Ines Bouazizi, Mohamed Boudinar, Lukas Wenzel)
-
-Jedem, der eine Kopie dieser Software und der zugehörigen Dokumentationsdateien (die "Software") erhält, wird hiermit kostenlos die Erlaubnis erteilt, ohne Einschränkung mit der Software zu handeln, einschließlich und ohne Einschränkung der Rechte zur Nutzung, zum Kopieren, Ändern, Zusammenführen, Veröffentlichen, Verteilen, Unterlizenzieren und/oder Verkaufen von Kopien der Software, und Personen, denen die Software zur Verfügung gestellt wird, dies unter den folgenden Bedingungen zu gestatten:
-Der obige Urheberrechtshinweis und dieser Genehmigungshinweis müssen in allen Kopien oder wesentlichen Teilen der Software enthalten sein.
-DIE SOFTWARE WIRD OHNE MÄNGELGEWÄHR UND OHNE JEGLICHE AUSDRÜCKLICHE ODER STILLSCHWEIGENDE GEWÄHRLEISTUNG, EINSCHLIEßLICH ABER NICHT BESCHRÄNKT AUF DIE GEWÄHRLEISTUNG DER MARKTGÄNGIG-KEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN ZWECK UND DER NICHTVERLET-ZUNG VON RECHTEN DRITTER, ZUR VERFÜGUNG GESTELLT. DIE AUTOREN ODER URHEBERRECHTSINHABER SIND IN KEINEM FALL HAFTBAR FÜR ANSPRÜCHE, SCHÄDEN ODER ANDERE VERPFLICHTUNGEN, OB IN EINER VERTRAGS- ODER HAFTUNGSKLAGE, EINER UNERLAUBTEN HANDLUNG ODER ANDERWEITIG, DIE SICH AUS, AUS ODER IN VERBINDUNG MIT DER SOFTWARE ODER DER NUTZUNG ODER ANDEREN GESCHÄFTEN MIT DER SOFTWARE ERGEBEN.
