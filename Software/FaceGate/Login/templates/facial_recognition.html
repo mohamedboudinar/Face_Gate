@@ -1,0 +1,53 @@
+<html>
+    <head>
+        {% load static %}
+        <title>Facial Recognition</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'services.css' %}">
+    <link rel="icon" href="{% static 'icons8-gate-64.ico' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <style>
+        .not-visible {
+         display: none;
+        }
+        .visible{
+            display: flex;
+        }
+        .img-element{
+            width: 100px;
+            height: 100px;
+            text-align: left;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="{% static 'login.js' %}" defer></script>
+    <body>
+        <header class="header">
+            <a href="/consultation/" class="logo">Face Gate.</a>
+            <nav class="navbar">  
+                <a href="/consultation/">Time Consultation</a>
+                <a href="/services/">Services</a>
+                <a href="{% url 'logout' %}">Log Out</a>    
+            </nav>
+        </header>
+        
+        <section class="faceid" style=" height: 55vh;display: flex;align-items: center;padding: 0 5%;">
+            <div class="faceid-content" style="margin-left: 27%; ">
+             <video autoplay="true" id="video-element"></video>
+             <div id="img-element"></div>
+            <div class="mt-3">
+                <button id="capture-btn" class="btn" style="background: rgb(87, 87, 216); margin-top: 15px; margin-left: 55%;">take photo</button> 
+                <button id="end-btn" class="btn" style="background: rgb(255, 24, 186); margin-top: 15px; margin-left: 55%;"><a href="/consultation/" style="text-decoration: none; color: white;">Done</a></button>
+            </div>
+            </div>
+            
+        </section>
+            
+            
+   
+
+    </body>
+</html>

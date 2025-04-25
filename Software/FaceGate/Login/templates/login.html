@@ -1,0 +1,48 @@
+<html>
+<head>
+    {% load static %}
+    <title>Sign in to your Account</title>
+  
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<link rel="icon" href="{% static 'icons8-gate-64.ico' %}">
+</head>
+<body>
+<section style="background: url({% static 'bg.jpg' %}) no-repeat;">
+    <div class="login-box">
+        <form method="post">
+            <h2>Employee portal</h2>
+            {% csrf_token %}
+            {% if messages %}
+    
+            {% for message in messages %}
+            <div class="alert">
+                <label>{{ message }}</label>
+              </div>
+    
+            {% endfor %}    
+        {% endif %}
+            <div class="input-box">
+                <span class="icon"><ion-icon name="person"></ion-icon></span>
+                <input type="text" name="username" required>
+                <label >Employee number</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" name="pass" required>
+                <label >Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me </label>
+            </div>
+            <button type="submit" class="btn-login">Login</button>
+        </form>
+    </div>
+</section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
+</body>
+</html>

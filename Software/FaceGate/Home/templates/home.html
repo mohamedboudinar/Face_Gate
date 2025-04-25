@@ -1,0 +1,47 @@
+<html>
+    <head>
+        {% load static %}
+        <title>Home Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <link rel="icon" href="{% static 'icons8-gate-64.ico' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header class="header">
+            <a href="/home/" class="logo">Face Gate.</a>
+            <nav class="navbar">  
+                <a class="active" href="/home/" >Home</a>
+                <a href="/home/about_us/">About Us</a>
+                <a href="/home/contact_us/">Contact Us</a>   
+            </nav>
+        </header>
+        
+        <section class="home" style="background: url({% static 'team-7371721_1920.jpg' %}) no-repeat;">
+            <div class="home-content">
+                <h1>Hi , we are Face Gate Company</h1>
+                <h3>IT Consulting Company</h3>
+                <p> Welcome to FaceGate, where advanced facial recognition technology enhances security and digitalizes time management in the workplace. 
+                    Our system enables registered users to securely authenticate their identity for various operations, ensuring seamless and safe access to essential services. 
+                    All activities are meticulously tracked and managed through our user-friendly website, promoting efficiency and control. </p>
+
+                    <div class="btn-box">
+                        <a href="/home/about_us/">Who are we?</a>
+                        <a href="/home/contact_us/">Let's Talk</a>
+                    </div>
+            </div>
+            <div class="home-sci">
+                <a href="https://facebook.com"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://twitter.com"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://de.linkedin.com"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            
+        </section>
+            
+            
+   
+
+    </body>
+</html>

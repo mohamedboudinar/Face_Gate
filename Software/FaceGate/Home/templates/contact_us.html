@@ -1,0 +1,44 @@
+<html>
+    <head>
+        {% load static %}
+        <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <link rel="icon" href="{% static 'icons8-gate-64.ico' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header class="header">
+            <a href="/home/" class="logo">Face Gate.</a>
+            <nav class="navbar">  
+                <a href="/home/" >Home</a>
+                <a href="/home/about_us/">About Us</a>
+                <a class="active" href="/home/contact_us/">Contact Us</a>     
+            </nav>
+        </header>
+        
+        <section class="contact">
+            <div class="contact-content">
+                <table><tr><td style="width: 88%;"><h1>Contact US</h1><hr></td><td><img src="{% static 'icons8-contact-100.png' %}"></td></tr></table>
+                <div class="contact-infos">
+                <i class='bx bxs-phone' style="color: white;"></i><label>+49 123 45678</label><br>
+                <i class='bx bxs-envelope' style="color: white;"></i><label>support@facegate.de</label><br>
+                <i class='bx bxs-map' style="color: white;"></i><label>Wilhelminenhofstraße 75A, 12459 Berlin</label><br>
+                <p> or use our <a href="contact_form/">Contact form</a></p>
+            </div>
+            </div>
+            <div class="home-sci">
+                <a href="https://facebook.com"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://twitter.com"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://de.linkedin.com"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            
+        </section>
+            
+            
+   
+
+    </body>
+</html>

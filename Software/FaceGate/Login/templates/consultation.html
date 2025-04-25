@@ -1,0 +1,70 @@
+<html>
+    <head>
+        {% load static %}
+        <title>Time Consultation</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'services.css' %}">
+    <link rel="icon" href="{% static 'icons8-gate-64.ico' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header class="header">
+            <a href="/consultation/" class="logo">Face Gate.</a>
+            <nav class="navbar">  
+                <a class="active" href="/consultation/">Time Consultation</a>
+                <a href="/services/">Services</a>
+                <a href="{% url 'logout' %}">Log Out</a>    
+            </nav>
+        </header>
+        
+        <section class="consultation">
+            <div class="consultation-content">
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <th>Start time</th>
+                        <th>End time</th>
+                        <th>Break</th>
+                        <th>Worked hours</th>
+                    </tr>
+                    <tr>
+                        <td>13.06.2024</td>
+                        <td>09:00</td>
+                        <td>17:00</td>
+                        <td>0,5</td>
+                        <td>7,5</td>
+                    </tr>
+                    <tr>
+                        <td>13.06.2024</td>
+                        <td>09:00</td>
+                        <td>17:00</td>
+                        <td>0,5</td>
+                        <td>7,5</td>
+                    </tr>
+                    <tr>
+                        <td>13.06.2024</td>
+                        <td>09:00</td>
+                        <td>17:00</td>
+                        <td>0,5</td>
+                        <td>7,5</td>
+                    </tr>
+                    <tr>
+                        <td>13.06.2024</td>
+                        <td>09:00</td>
+                        <td>17:00</td>
+                        <td>0,5</td>
+                        <td>7,5</td>
+                    </tr>
+                </table>
+            </div>
+
+            
+        </section>
+            
+            
+   
+
+    </body>
+</html>

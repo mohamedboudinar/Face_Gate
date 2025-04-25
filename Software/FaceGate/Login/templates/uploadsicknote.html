@@ -1,0 +1,71 @@
+<html>
+    <head>
+        {% load static %}
+        {% load materializecss %}
+        <title>Upload sick note</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'services.css' %}">
+    <link rel="icon" href="{% static 'icons8-gate-64.ico' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.1/css/materialize.min.css" integrity="sha256-qj3p6P1fJIV+Ndv7RW1ovZI2UhOuboj9GcODzcNFIN8=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.1/js/materialize.min.js" integrity="sha256-SrBfGi+Zp2LhAvy9M1bWOCXztRU9Ztztxmu5BcYPcPE=" crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function(){
+
+  // Initialize materialize data picker
+  $('.datepicker').datepicker({'format': 'yyyy-mm-dd'});
+  $('select').formSelect();
+
+});
+</script>
+    <body>
+        <header class="header">
+            <a href="/consultation/" class="logo">Face Gate.</a>
+            <nav class="navbar">  
+                <a href="/consultation/">Time Consultation</a>
+                <a class="active" href="/services/">Services</a>
+                <a href="{% url 'logout' %}">Log Out</a>    
+            </nav>
+        </header>
+        
+        <section class="departements">
+            <div class="dep-content" style="margin-left: 28%;">
+                {% if messages %}
+    
+                {% for message in messages %}
+                <div class="info" style="margin-left: 20%;">
+                  <label>{{message}}</label>
+                  </div>
+              
+                {% endfor %}    
+              {% endif %}
+              <div class="form-add" style="width: 600px;height: 50%; background-color: white;" >
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <label style="color:rgb(171, 171, 171); font-size:12px; padding-left: 10px;">Employee</label><br>
+                    <label style="color:black; font-size:18px;">{{user}}</label>
+                    {{ form.startdate|materializecss }}
+                    {{ form.enddate|materializecss }}
+                    {{ form.proof|materializecss }}               
+                    <button type="submit" class="btn"> Submit</button>
+            </form>
+        </div>
+            </div>
+            
+        </section>
+            
+            
+   
+
+    </body>
+</html>

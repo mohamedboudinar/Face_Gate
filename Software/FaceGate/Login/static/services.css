@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #081b29;
+}
+
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: shaowRight 1s ease forwards;
+    animation-delay: .4s;
+}
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color:#00abf0;
+}
+@keyframes shaowRight{
+    100%{
+        width: 0;
+    }
+}
+.consultation,
+.services,
+.departements,
+.employee{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.consultation-content{
+    width: 70%;
+    height: 60%;
+    margin-left: 15%;   
+    padding: 10px;
+}
+.consultation-content table{
+    width: 100%;
+    background:#025575;
+    border: 2px solid skyblue;
+}
+.consultation-content table th{
+    color: rgb(255, 222, 160);
+    text-align: center;
+    align-items: center;
+}
+.services-content{
+    width: 40%;
+    height: 40%;
+    margin-left: 5%;   
+    padding: 10px;
+}
+.services-content a{
+    color:white;
+}
+.services-content ul li{
+    list-style-type:square; 
+    color: white;
+}
+.consultation-content table td{
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+.departements-content{
+    width: 70%;
+    height: 60%;
+    margin-left: 5%;   
+    padding: 10px;
+}
+.departements-content h1{
+    color:white;
+    margin-left: 40%;
+    font-weight: 600;
+    font-size: 40px;
+}
+.departements-content hr{
+    color:white;
+    width: 60%;
+    margin-left: 33%;
+    margin-bottom:5%;
+}
+.departements-content table{
+    width: 130%;
+    background:#025575;
+    border: 2px solid skyblue;
+}
+.departements-content table th{
+    text-align: center;
+    align-items: center;
+    color: skyblue;
+    border-bottom: 1px solid skyblue;
+}
+.departements-content table td label{
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    color: white;
+}
+.btn-modify{
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background: #87ceeb;
+    border: 0px;
+    margin:5px;
+}
+.btn-modify:hover{
+    background:#b4e6f9 ;
+}
+.btn-modify a,
+.btn-delete a,
+.btn-add a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.btn-delete{
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background: #ff4271;
+    border: 0px;
+    margin:5px;
+}
+.btn-delete:hover{
+    background: #ed6386;
+}
+.btn-add{
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    background: #5bba76;
+    border: 0px;
+    margin:5px;
+}
+.btn-add:hover{
+    background: #7ac790;
+}
+.alert{
+    width: 100%;
+    height:60px;
+    border: 1px solid #be3232;
+    padding:15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    text-align: center;
+    align-items: center;
+    background: #fa7474;
+}
+.alert label{
+    width: 90%;
+    font-size: 1em;
+    color: #be3232;
+}
+.dep-content{
+    width:  450px;
+    margin-left: 35%;   
+    padding: 10px;
+}
+.emp-content{
+    width: 550px;
+    margin-left: 30%;   
+    padding: 10px;
+}
+.form-add{
+    width: 450px;
+    height: 40%;
+    padding: 20px;
+    background-color: #025575;; 
+    border: 2px solid #87ceeb;
+}
+.form-add input{
+    width: 300px;
+    height: 25px;
+}
+
+.form-add h1,
+.employee-content h1{
+    color: skyblue;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+}
+.form-add hr,
+.employee-content hr{
+    width: 60%;
+    color: skyblue;
+}
+.form-add label,
+.employee-content label{
+    color: white;
+}
+.btn {
+    border: none;
+    background-color: #ff4271;
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    margin-left: 37%;
+    border-radius: 5px;
+  }
+  .btn:hover {
+    cursor: pointer;
+    background-color: #ed6386;
+  }
+  .form-add table td,
+  .employee-content table td{
+    padding: 10px;
+  }
+  .employee-content{
+    width: 550px;
+    height: 70%;
+    padding: 20px;
+    background-color: #025575;;
+    border: 2px solid #87ceeb;
+  }
+  .employee-content input{
+    width: 300px;
+    height: 25px;
+  }
+  .added{
+    width: 400px;
+    height:60px;
+    border: 1px solid #346149;
+    padding:15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    background: #54a67a;
+    position: relative;
+}
+.added label{
+    width: 90%;
+    font-size: 1em;
+    color: #346149;
+}
+.info{
+    width: 400px;
+    height:60px;
+    border: 1px solid white;
+    padding:15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    background: transparent;
+    position: relative;
+}
+.info label{
+    width: 90%;
+    font-size: 1em;
+    color: white;
+}
+.faceid-content{
+    width: 40%;
+    height: 40%; 
+    padding: 10px;
+}
+

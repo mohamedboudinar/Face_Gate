@@ -1,0 +1,64 @@
+<html>
+    <head>
+        {% load static %}
+        <title>Employees List</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'services.css' %}">
+    <link rel="icon" href="{% static 'icons8-gate-64.ico' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header class="header">
+            <a href="/home-admin/" class="logo">Face Gate.</a>
+            <nav class="navbar">  
+                <a class="active" href="/home-admin/">Employees</a>
+                <a href="/departement/">Departements</a>
+                <a href="{% url 'logout' %}">Log Out</a>    
+            </nav>
+        </header>
+        
+        <section class="departements">
+            <div class="departements-content">
+                <h1>Employees List</h1> <hr>
+                {% if messages %}
+    
+                {% for message in messages %}
+                <div class="alert">
+                  <label>{{message}}</label>
+                  </div>
+              
+                {% endfor %}    
+              {% endif %}
+                <button type="button" class="btn-add"><a href="/add-employee/">Add Employee</a></button>
+                <table>
+                    <tr>
+                        <th>Employee number</th>
+                        <th>First name</th>
+                        <th>Last name</th>
+                        <th>Departement</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    {% for emp in emps %}
+                    <tr>
+                        <td><label>{{emp.empnum}}</label></td>
+                        <td><label>{{emp.fname}}</label></td>
+                        <td><label>{{emp.lname}}</label></td>
+                        <td><label>{{emp.dep}}</label></td>
+                        <td><button type="button" class="btn-modify"><a href="/home-admin/modify/{{emp.id}}">Modify</a></button></td>
+                        <td><button type="button" class="btn-delete"><a href="/home-admin/delete/{{emp.id}}">Delete</a></button></td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+
+            
+        </section>
+            
+            
+   
+
+    </body>
+</html>

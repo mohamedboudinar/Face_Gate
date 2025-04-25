@@ -1,0 +1,38 @@
+<html>
+    <head>
+        {% load static %}
+        <title>Services</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'services.css' %}">
+    <link rel="icon" href="{% static 'icons8-gate-64.ico' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header class="header">
+            <a href="/consultation/" class="logo">Face Gate.</a>
+            <nav class="navbar">  
+                <a href="/consultation/">Time Consultation</a>
+                <a class="active" href="/services/">Services</a>
+                <a href="{% url 'logout' %}">Log Out</a>    
+            </nav>
+        </header>
+        
+        <section class="services">
+            <div class="services-content">
+                <ul style="line-height:180%">
+                    <li><a href="vacation_request/">Request vacation days</a></li>
+                    <li><a href="sicknote/">Upload sick note</a></li>
+                </ul>
+             
+                
+            </div>
+            
+        </section>
+            
+            
+   
+
+    </body>
+</html>

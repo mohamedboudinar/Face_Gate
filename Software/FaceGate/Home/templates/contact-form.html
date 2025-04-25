@@ -1,0 +1,48 @@
+<html>
+    <head>
+        {% load static %}
+        <title>Contact Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <link rel="icon" href="{% static 'icons8-gate-64.ico' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header class="header">
+            <a href="/home/" class="logo">Face Gate.</a>
+            <nav class="navbar">  
+                <a href="/home/" >Home</a>
+                <a href="/home/about_us/">About Us</a>
+                <a class="active" href="/home/contact_us/">Contact Us</a>   
+            </nav>
+        </header>
+        
+        <section class="contact">
+                <div class="contact-form">
+                    <form method="POST">
+                        {% csrf_token %}
+                  <table><tr><td style="width: 88%;"><h1>Contact US</h1><hr></td></td></tr></table>
+                  <br>
+                  <input type="text" class="name" placeholder="Enter your name..." required><br>
+                  <input type="email" class="email" placeholder="Enter your email adress..." required><br>
+                  <input type="text" class="subject" placeholder="Enter the subject..." required><br>
+                  <textarea  cols="30" rows="10" placeholder="Type your message here..." class="message"></textarea><br><br>
+                  <button type="submit" class="btn"><a href="/home/contact_us/sendform/" style="text-decoration: none;color: white;">Submit</a></button>
+                  </form>
+                  </div>
+        
+            <div class="home-sci">
+                <a href="https://facebook.com"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://twitter.com"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://de.linkedin.com"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            
+        </section>
+            
+            
+   
+
+    </body>
+</html>
